@@ -69,7 +69,7 @@ def download_file(request, container, object_name):
     file_path = obj_cli.download_object(container, object_name)
     f = open(file_path, 'r')
 
-    response = HttpResponse(f.read(), mimetype="text/plain")
+    response = HttpResponse(f.read())
     response["Content-Disposition"]= "attachment; filename=%s" % (object_name)
     return response 
 
