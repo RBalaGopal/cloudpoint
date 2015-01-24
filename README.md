@@ -27,6 +27,7 @@ User side:
 > sudo apt-get install python-django python-swiftclient
 > git clone https://github.com/RBalaGopal/cloudpoint.git
 > cd clouppoint
+> OpenStack "cloudpoint/portal/config.py" file and set the SERVER_URL to your OpenStack Environment.
 > python manage.py runserver 0.0.0.0:1234
 > Go to URL: "http://<your ip>:1234"
 > Log with any of below creds:
